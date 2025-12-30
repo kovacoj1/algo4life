@@ -1,0 +1,13 @@
+[package]
+name = "rust_sim"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rust_sim"
+crate-type = ["cdylib"]
+
+[dependencies]
+rand = "0.8"
+rayon = "1.7"
+pyo3 = { version = "0.23", features = ["extension-module"] }
