@@ -1,3 +1,7 @@
 [submodule ".aux"]
 	path = .aux
 	url = git@github.com:kovacoj1/styles.git
+[submodule "optimizers"]
+	path = optimizers
+	url = git@github.com:kovacoj1/optimizers.git
+
