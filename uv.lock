@@ -2,15 +2,22 @@ version = 1
 revision = 2
 requires-python = ">=3.13"
 
+[manifest]
+members = [
+    "algo4life",
+    "optimizers",
+]
+
 [[package]]
 name = "algo4life"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "ipykernel" },
     { name = "matplotlib" },
     { name = "maturin" },
     { name = "numpy" },
+    { name = "optimizers" },
     { name = "torch" },
 ]
 
@@ -20,6 +27,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "maturin", specifier = ">=1.10.2" },
     { name = "numpy", specifier = ">=2.4.0" },
+    { name = "optimizers", editable = "optimizers" },
     { name = "torch", specifier = ">=2.9.1" },
 ]
 
@@ -765,6 +773,17 @@ source = { registry = "https://pypi.org/simple" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/eb/86626c1bbc2edb86323022371c39aa48df6fd8b0a1647bc274577f72e90b/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:5b17e2001cc0d751a5bc2c6ec6d26ad95913324a4adb86788c944f8ce9ba441f", size = 89954, upload-time = "2025-03-07T01:42:44.131Z" },
 ]
+
+[[package]]
+name = "optimizers"
+version = "0.1.0"
+source = { editable = "optimizers" }
+dependencies = [
+    { name = "torch" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "torch", specifier = ">=2.9.1" }]
 
 [[package]]
 name = "packaging"

@@ -13,5 +13,14 @@ dependencies = [
     "matplotlib>=3.10.8",
     "maturin>=1.10.2",
     "numpy>=2.4.0",
+    "optimizers",
     "torch>=2.9.1",
 ]
+
+[tool.uv.workspace]
+members = [
+    "optimizers",
+]
+
+[tool.uv.sources]
+optimizers = { workspace = true }
