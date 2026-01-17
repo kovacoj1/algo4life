@@ -14,6 +14,9 @@ dependencies = [
     "maturin>=1.10.2",
     "numpy>=2.4.0",
     "optimizers",
+    "pandas>=2.3.3",
+    "scipy>=1.17.0",
+    "statsmodels>=0.14.6",
     "torch>=2.9.1",
 ]
 
